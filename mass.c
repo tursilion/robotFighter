@@ -1,7 +1,7 @@
 /* Mass Murderer aka Robot Fighter by Mike Ward*/
 /* Note the Robot Fight code is lost, so the   */
 /* 'rankings' will be wrong for that version.  */
-/*Written in c99 by CLint Pulley*/
+/*Written in Clint Pulley's c99 */
 /*(C)1990 Seahorse Software*/
  
 #include "dsk5.grf1rf"
