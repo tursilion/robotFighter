@@ -1,0 +1,22 @@
+* DEMQ is a dump of the E/A routines and loads at >2000
+* -- this is patched directly into it to replace DSRLNK with
+* direct unpacking code (located in unpack.a99)
+
+	AORG >22B2
+	
+* See Super Space Acer for a more real example.
+* we always call 2702 - that is patched inline
+* if Mass Murderer is selected
+
+* on entry, WP is >209A
+
+  LWPI >8300
+  MOV @>2702,R0
+  BL *R0
+
+* back to caller, remember to increment R14
+  LWPI >209A
+  INCT R14
+  RTWP
+  
+  END
